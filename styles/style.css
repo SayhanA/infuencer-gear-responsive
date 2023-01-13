@@ -22,6 +22,9 @@ body{
 .container{
     margin: 80px 120px;
 }
+.containers{
+    margin: 0 165px;
+}
 .flex{
     display: flex;
     flex-flow: row nowrap;
@@ -31,6 +34,9 @@ body{
 }
 li{
     list-style: none;
+}
+hr{
+    margin: 40px 0;
 }
 
 
@@ -200,7 +206,25 @@ nav{
                     Header Content Ends Here 
     ---------------------------------------------------------*/
 
+/* ---------------------------------------------------------
+                    Logo Bar Starts Here
+    ---------------------------------------------------------- */
 
+    .logo{
+        align-items: center;
+    }
+    .logo>div>img{
+        width: 85px;
+        
+    }
+
+
+
+
+
+/* -----------------------------------------------------------
+                    Logo Bar Ends Here 
+   --------------------------------------------------------------*/
 
 
 
