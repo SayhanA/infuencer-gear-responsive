@@ -87,7 +87,6 @@
 
     /* Flexible Menu List Style Starts Here */
     .nav-list .menu-icon{
-        /* border: 1px solid; */
         display: none;
         position: relative;
         background-color: var(--transparent);
@@ -260,6 +259,7 @@
         font-size: 22px;
         position: relative;
         top: 5px;
+        padding-bottom: 8px;
     }
     .ratting-stars{
         color: #FB8200;
@@ -341,11 +341,59 @@
         line-height: 40px;
     }
     
-    
-    
     /* ----------------------------------------------------
              Featured Products Section Ends Here 
     ---------------------------------------------------------- */
+
+    /* ----------------------------------------------------
+                    Footer Starts Here
+    -------------------------------------------------------- */
+    footer{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color:  #0A0826;
+        color: white;
+        padding: 80px;
+    }
+    .footer-title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #d3d0d0;
+    }
+    footer>p{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #D9DBE1;
+    }
+    
+    .footer-list{
+        margin:20px 0 20px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .footer-list>li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #1610684d;
+    }
+    .footer-list>li>a{
+        color: #cecece;
+    }
+    
+    /* ----------------------------------------------------
+                    Footer Ends Here
+    -------------------------------------------------------- */
 
 
  /*------------------------------------------------------
@@ -400,6 +448,58 @@
     }
     .nav-list>ul>li>a:hover::after{
         transform: scale(0);
+    }
+    /* --------------- Nav bar Ends Here -------------------*/
+
+    .header-content{
+        padding: 50px 0 0 0;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-title{
+        font-size: 40px;
+    }
+    .header-discription{
+        padding: 20px 20px 20px 0;
+    }
+
+
+    /* <!-- Brands Icon Section Starts Here   --> */
+    .containers{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 50px;
+    }
+
+    /* <!-- Collection Section Starts Here --> */
+
+    .collection-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* Featured Products Section Starts Here  */
+    .featured{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 100px;
+        gap: 10px;
+    }
+    .featured-text{
+        padding:50px;
+        order: 1;
+    }
+    .featured-description{
+        margin: 0;
+        padding: 0 0 30px 0;
+    }
+    .featured-img{
+        order: 2;
     }
 }
 
