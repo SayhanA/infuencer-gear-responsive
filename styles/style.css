@@ -35,9 +35,6 @@
     li{
         list-style: none;
     }
-    hr{
-        margin: 40px 0;
-    }
 
 
     /* -----------------------------------
@@ -79,11 +76,20 @@
     /* Nav-List hover Style  Ends Here*/
 
 
-    .material-symbols-outlined, .material-symbols-outlined{
+    .material-symbols-outlined{
         padding: 10px 0 0 0;
         font-size: 30px;
+        transition: all .2s;
     }
-
+    .shopping{
+        font-size: 30px!important;
+        transition: all .2s;
+    }
+    .material-symbols-outlined:hover{
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+        font-size: 31px;
+    }
 
     /* Flexible Menu List Style Starts Here */
     .nav-list .menu-icon{
@@ -153,9 +159,9 @@
     } */
     .content-text{
         max-width: 580px;
+        padding-bottom: 100px;
     }
     .header-title{
-        
         font-weight: 700;
         font-size: 52px;
         line-height: 70px;
@@ -174,6 +180,13 @@
         gap: 5px;
         border-radius: 41px;
         color: white;
+        transition: all .2s ;
+    }
+    .button:hover{
+        background-color: #454648;
+        color: red;
+        font-weight: 700;
+        cursor: pointer;
     }
     .material-symbols-outlined{
         padding:0;
@@ -208,12 +221,14 @@
 
     .logo{
         align-items: center;
+        flex-flow: column w;
     }
     .logo>div>img{
-        width: 85px;
-        
+        width: 85px; 
     }
-
+    hr{
+        margin: 50px 0;
+    }
 
 /* -----------------------------------------------------------
                     Logo Bar Ends Here 
@@ -282,23 +297,40 @@
         grid-template-columns: repeat(3,1fr);
         gap: 30px;
         padding: 15px;
+        perspective: 10000px;
+        transition: all .5s;
     }
     .collection-cards>div{
         border-radius: 5px;
         padding: 15px;
         box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.155);
+        cursor: pointer;
+        transition: all .5s;
+    }
+    .collection-cards>div:hover{
+        transform: rotateY(5deg);
+        background-color: rgba(255, 192, 203, 0.519);
     }
     .see-more{
         width: 100%;
         display: flex;
-        gap: 10px;
+        gap: 8px;
         justify-content: flex-end;
-        
         margin: 40px 10% 50px 0;
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
         color: rgba(224, 44, 109, 0.87);
+        transition: all .5s;
+    }
+    .see-more:hover{
+        color: red;
+        font-size: 18px;
+    }
+    .see-more>span{
+        font-size: 22px;
+        position: relative;
+        top: 0px;
     }
     
 /* -------------------------------------------------------
@@ -334,11 +366,17 @@
         padding: 0 100px 20px 0;
     }
     .featured-btn{
-        width: 150px;
+        width: 140px;
         background-color: #E02C6D;
+        color: white;
         text-align: center;
-        padding-right: 10px;
+        padding: 0 20px;
         line-height: 40px;
+        cursor: pointer;
+    }
+    .featured-btn:hover{
+        background-color: red;
+        font-weight: 700;
     }
     
     /* ----------------------------------------------------
@@ -484,11 +522,21 @@
         flex-flow: column wrap;
         gap: 50px;
     }
+    hr{
+        margin: 80px 0;
+    }
 
     /* <!-- Collection Section Starts Here --> */
 
     .collection-cards{
         grid-template-columns: repeat(1,1fr);
+    }
+    .collection-title{
+        margin: 0px 0 30px 0;
+    }
+    .see-more{
+        margin: 40px 10% 0px 0;
+        cursor: pointer;
     }
 
     /* Featured Products Section Starts Here  */
@@ -500,7 +548,7 @@
         gap: 10px;
     }
     .featured-text{
-        padding:50px;
+        padding:30px 50px 50px 50px;
         order: 1;
     }
     .featured-description{
@@ -514,7 +562,9 @@
         order: 2;
     }
     .featured-img>img{
-        width: 100%;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
     }
 }
 
