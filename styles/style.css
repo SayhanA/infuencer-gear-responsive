@@ -306,6 +306,46 @@
     -----------------------------------------------------------*/
 
 
+    /* ----------------------------------------------------
+             Featured Products Section Starts Here 
+    ---------------------------------------------------------- */
+    .featured{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin-bottom: 100px;
+    }
+    .featured-text{
+        padding: 50px 0 50px 0px;
+    }
+    .featured-img{
+        padding: 50px 0px 0 50px;
+    }
+    .featured-title{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 60px;
+        color: #0A0826;
+        padding: 30px 0 20px 0;
+    }
+    .featured-description{
+        font-weight: 700;
+        color: #787885;
+        padding: 0 100px 20px 0;
+    }
+    .featured-btn{
+        width: 150px;
+        background-color: #E02C6D;
+        text-align: center;
+        padding-right: 10px;
+        line-height: 40px;
+    }
+    
+    
+    
+    /* ----------------------------------------------------
+             Featured Products Section Ends Here 
+    ---------------------------------------------------------- */
 
 
  /*------------------------------------------------------
@@ -420,4 +460,4 @@
     .nav-list>ul>li>a:hover::after{
         transform: scale(0);
     }
-    
+}
